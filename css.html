@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS - Complete A-Z Pure English</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.content-box{max-width:1200px;margin:20px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+table{width:100%;border-collapse:collapse;margin-top:15px;font-size:13px}
+th,td{border:1px solid #ddd;padding:6px;text-align:left}
+th{background:#2563eb;color:white;position:sticky;top:0}
+h2{color:#2563eb;margin-top:35px;border-bottom:3px solid #2563eb;padding-bottom:5px}
+.code{background:#0f172a;color:#22c55e;padding:12px;border-radius:6px;margin:10px 0;font-family:monospace;overflow-x:auto}
+.cat{background:#dbeafe;font-weight:bold;color:#1e3a8a}
+.bm-margin{background:#fbbf24;padding:15px;text-align:center}.bm-border{background:#f87171;padding:10px}.bm-padding{background:#34d399;padding:15px}.bm-content{background:#60a5fa;padding:15px;color:white;font-weight:bold}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><a href="index.html" class="menu-btn">Home</a><a href="html.html" class="menu-btn">HTML</a><a href="css.html" class="menu-btn">CSS</a><a href="js.html" class="menu-btn">JS</a><a href="flutter.html" class="menu-btn">Flutter</a><a href="about.html" class="menu-btn">About</a></nav>
+
+<div class="content-box">
+<h1>CSS - Complete A-Z </h1>
+
+<h2>1. What is CSS?</h2>
+<p><b>CSS = Cascading Style Sheets</b><br>
+- Created by Hakon Wium Lie in 1996<br>
+- Used to style HTML document<br>
+- Controls color, layout, font, spacing, animation<br>
+- Latest version CSS3 (Modular)</p>
+
+<h2>2. Features of CSS - 10 Points</h2>
+<ul>
+<li>Styles HTML elements - makes website beautiful</li>
+<li>One CSS file can control 1000 HTML pages</li>
+<li>Responsive design - mobile, tablet, desktop friendly</li>
+<li>Fast loading - less code, external file cached</li>
+<li>Supports animation, transition, hover effects</li>
+<li>SEO friendly and browser compatible</li>
+<li>Reusable and maintainable code</li>
+<li>Multiple device compatibility</li>
+<li>Supports Flexbox and Grid layout</li>
+<li>Time saving - separation of content and design</li>
+</ul>
+
+<h2>3. Types of CSS - 3 Types</h2>
+<div class="code">
+1. Inline CSS: &lt;p style="color:red;"&gt; - Direct in tag, highest priority<br>
+2. Internal CSS: &lt;style&gt; p{color:red;} &lt;/style&gt; - Inside head tag<br>
+3. External CSS: &lt;link rel="stylesheet" href="style.css"&gt; - Separate file, BEST and most used
+</div>
+
+<h2>4. Box Model - Core Concept of CSS</h2>
+<div style="max-width:400px;margin:20px auto">
+<div class="bm-margin">MARGIN - Outside space
+<div class="bm-border">BORDER - Border line
+<div class="bm-padding">PADDING - Inside space
+<div class="bm-content">CONTENT - Actual text/image</div>
+</div></div></div>
+</div>
+<p><b>Formula:</b> Total Width = Content + Padding + Border + Margin<br>
+<b>Feature:</b> box-sizing: border-box makes calculation accurate</p>
+
+<h2>5. CSS Selectors - 15 Selectors</h2>
+<table>
+<tr><th>Selector</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>* (Universal)</td><td>*{ }</td><td>Selects all elements</td><td>Resets margin/padding</td></tr>
+<tr><td>Element/Tag</td><td>p{ }</td><td>Selects by tag name</td><td>All p tags styled</td></tr>
+<tr><td>.class</td><td>.box{ }</td><td>Selects by class name</td><td>Reusable, many elements</td></tr>
+<tr><td>#id</td><td>#header{ }</td><td>Selects by id</td><td>Unique, one per page</td></tr>
+<tr><td>Group</td><td>h1, h2, p{ }</td><td>Multiple tags at once</td><td>Applies same style to many</td></tr>
+<tr><td>Descendant</td><td>div p{ }</td><td>p inside div</td><td>Nested selection</td></tr>
+<tr><td>Child ></td><td>div > p{ }</td><td>Direct child</td><td>Only direct child</td></tr>
+<tr><td>Adjacent +</td><td>h1 + p{ }</td><td>Next sibling</td><td>Immediately after h1</td></tr>
+<tr><td>General ~</td><td>h1 ~ p{ }</td><td>All siblings after</td><td>All p after h1</td></tr>
+<tr><td>:hover</td><td>a:hover{ }</td><td>On mouse hover</td><td>Hover effect</td></tr>
+<tr><td>:active</td><td>a:active{ }</td><td>On click active</td><td>Click effect</td></tr>
+<tr><td>:focus</td><td>input:focus{ }</td><td>On input focus</td><td>Focus styling</td></tr>
+<tr><td>:nth-child()</td><td>li:nth-child(2){ }</td><td>Nth child element</td><td>Selects specific child number</td></tr>
+<tr><td>::before</td><td>p::before{content:"★"}</td><td>Adds before content</td><td>Inserts content before</td></tr>
+<tr><td>::after</td><td>p::after{content:"★"}</td><td>Adds after content</td><td>Inserts content after</td></tr>
+</table>
+
+<h2>6. CSS Properties - 100+ Properties Full List (Work + Feature)</h2>
+<table>
+<tr><th>No</th><th>Property</th><th>Work / Function</th><th>Example</th><th>Feature</th></tr>
+<tr><td class="cat" colspan="5">A. Color & Background - 10 Properties</td></tr>
+<tr><td>1</td><td>color</td><td>Text color</td><td>color:red;</td><td>Sets text color</td></tr>
+<tr><td>2</td><td>background-color</td><td>Background color</td><td>background-color:blue;</td><td>Background fill color</td></tr>
+<tr><td>3</td><td>background-image</td><td>Background image</td><td>url('img.jpg')</td><td>Sets background image</td></tr>
+<tr><td>4</td><td>background-repeat</td><td>Repeat image</td><td>no-repeat</td><td>Controls repetition</td></tr>
+<tr><td>5</td><td>background-size</td><td>Background size</td><td>cover / contain</td><td>Size of bg image</td></tr>
+<tr><td>6</td><td>background-position</td><td>Background position</td><td>center top</td><td>Position of image</td></tr>
+<tr><td>7</td><td>background-attachment</td><td>Background scroll</td><td>fixed / scroll</td><td>Fixed or scroll</td></tr>
+<tr><td>8</td><td>background</td><td>Shorthand for all bg</td><td>background: red url() no-repeat center</td><td>All bg in one line</td></tr>
+<tr><td>9</td><td>background-clip</td><td>Clipping area</td><td>border-box</td><td>Where bg is clipped</td></tr>
+<tr><td>10</td><td>background: linear-gradient</td><td>Color gradient</td><td>linear-gradient(to right, blue, purple)</td><td>Two color mix</td></tr>
+
+<tr><td class="cat" colspan="5">B. Text & Font - 15 Properties</td></tr>
+<tr><td>11</td><td>font-size</td><td>Font size</td><td>16px / 2em</td><td>Size of text</td></tr>
+<tr><td>12</td><td>font-family</td><td>Font name</td><td>Arial, sans-serif</td><td>Font style family</td></tr>
+<tr><td>13</td><td>font-weight</td><td>Boldness</td><td>bold / 400 / 700</td><td>Thickness of text</td></tr>
+<tr><td>14</td><td>font-style</td><td>Italic/normal</td><td>italic / normal</td><td>Italic style</td></tr>
+<tr><td>15</td><td>font-variant</td><td>Small caps</td><td>small-caps</td><td>Small caps variant</td></tr>
+<tr><td>16</td><td>line-height</td><td>Line spacing</td><td>1.5 / 24px</td><td>Space between lines</td></tr>
+<tr><td>17</td><td>letter-spacing</td><td>Letter spacing</td><td>2px</td><td>Space between letters</td></tr>
+<tr><td>18</td><td>word-spacing</td><td>Word spacing</td><td>5px</td><td>Space between words</td></tr>
+<tr><td>19</td><td>text-align</td><td>Text alignment</td><td>left / center / right / justify</td><td>Horizontal alignment</td></tr>
+<tr><td>20</td><td>text-decoration</td><td>Decoration line</td><td>underline / none / line-through</td><td>Line on text</td></tr>
+<tr><td>21</td><td>text-transform</td><td>Case transform</td><td>uppercase / lowercase / capitalize</td><td>Changes case</td></tr>
+<tr><td>22</td><td>text-shadow</td><td>Text shadow</td><td>2px 2px 4px gray</td><td>Shadow behind text</td></tr>
+<tr><td>23</td><td>white-space</td><td>Whitespace handling</td><td>nowrap / pre</td><td>Controls wrapping</td></tr>
+<tr><td>24</td><td>word-break</td><td>Word breaking</td><td>break-all</td><td>Breaks long words</td></tr>
+<tr><td>25</td><td>text-overflow</td><td>Overflow text</td><td>ellipsis</td><td>Shows ... when overflow</td></tr>
+
+<tr><td class="cat" colspan="5">C. Box Model - 10 Properties</td></tr>
+<tr><td>26</td><td>width</td><td>Box width</td><td>100px / 100%</td><td>Horizontal size</td></tr>
+<tr><td>27</td><td>height</td><td>Box height</td><td>200px</td><td>Vertical size</td></tr>
+<tr><td>28</td><td>max-width / min-width</td><td>Max/min width</td><td>max-width: 1000px</td><td>Responsive limit</td></tr>
+<tr><td>29</td><td>max-height / min-height</td><td>Max/min height</td><td>min-height: 100vh</td><td>Height limit</td></tr>
+<tr><td>30</td><td>margin</td><td>Outside space</td><td>margin: 10px</td><td>Space outside box</td></tr>
+<tr><td>31</td><td>margin: auto</td><td>Center box</td><td>margin: 0 auto</td><td>Centers horizontally</td></tr>
+<tr><td>32</td><td>padding</td><td>Inside space</td><td>padding: 20px</td><td>Space inside box</td></tr>
+<tr><td>33</td><td>border</td><td>Border line</td><td>1px solid black</td><td>Border around box</td></tr>
+<tr><td>34</td><td>border-radius</td><td>Rounded corners</td><td>10px / 50%</td><td>Makes corners round</td></tr>
+<tr><td>35</td><td>box-sizing</td><td>Box calculation</td><td>border-box</td><td>Includes padding in width</td></tr>
+<tr><td>36</td><td>box-shadow</td><td>Box shadow</td><td>0 4px 10px gray</td><td>Shadow behind box</td></tr>
+
+<tr><td class="cat" colspan="5">D. Layout & Display - 20 Properties</td></tr>
+<tr><td>37</td><td>display</td><td>Display type</td><td>block / inline / flex / grid / none</td><td>How element displays</td></tr>
+<tr><td>38</td><td>display: flex</td><td>Flexbox layout</td><td>display:flex</td><td>Arranges items in row</td></tr>
+<tr><td>39</td><td>flex-direction</td><td>Flex direction</td><td>row / column</td><td>Direction of flex</td></tr>
+<tr><td>40</td><td>justify-content</td><td>Horizontal alignment in flex</td><td>center / space-between</td><td>Main axis alignment</td></tr>
+<tr><td>41</td><td>align-items</td><td>Vertical alignment in flex</td><td>center</td><td>Cross axis alignment</td></tr>
+<tr><td>42</td><td>align-content</td><td>Content alignment</td><td>center</td><td>Multi-line alignment</td></tr>
+<tr><td>43</td><td>gap</td><td>Gap between items</td><td>gap: 10px</td><td>Space between flex/grid items</td></tr>
+<tr><td>44</td><td>flex-wrap</td><td>Wrap items</td><td>wrap / nowrap</td><td>Wraps to next line</td></tr>
+<tr><td>45</td><td>flex-grow / shrink</td><td>Flex growth</td><td>flex-grow: 1</td><td>Growth factor</td></tr>
+<tr><td>46</td><td>display: grid</td><td>Grid layout</td><td>display:grid</td><td>Two-dimensional layout</td></tr>
+<tr><td>47</td><td>grid-template-columns</td><td>Grid columns</td><td>1fr 1fr 1fr</td><td>Defines columns</td></tr>
+<tr><td>48</td><td>grid-template-rows</td><td>Grid rows</td><td>100px 200px</td><td>Defines rows</td></tr>
+<tr><td>49</td><td>grid-area</td><td>Grid area name</td><td>grid-area: header</td><td>Named area</td></tr>
+<tr><td>50</td><td>position</td><td>Position type</td><td>static / relative / absolute / fixed / sticky</td><td>Positioning method</td></tr>
+<tr><td>51</td><td>top / left / right / bottom</td><td>Position offset</td><td>top: 10px</td><td>Distance from edge</td></tr>
+<tr><td>52</td><td>z-index</td><td>Stacking order</td><td>z-index: 10</td><td>Layer order, higher on top</td></tr>
+<tr><td>53</td><td>float</td><td>Floating</td><td>left / right</td><td>Floats element</td></tr>
+<tr><td>54</td><td>clear</td><td>Clear float</td><td>both</td><td>Clears float</td></tr>
+<tr><td>55</td><td>overflow</td><td>Overflow handling</td><td>hidden / scroll / auto</td><td>What happens when overflow</td></tr>
+<tr><td>56</td><td>visibility</td><td>Visibility</td><td>hidden / visible</td><td>Hides but keeps space</td></tr>
+
+<tr><td class="cat" colspan="5">E. Effects & Animation - 25 Properties</td></tr>
+<tr><td>57</td><td>opacity</td><td>Transparency</td><td>0 to 1 (0.5 = 50%)</td><td>Makes transparent</td></tr>
+<tr><td>58</td><td>cursor</td><td>Mouse cursor</td><td>pointer / wait</td><td>Cursor style</td></tr>
+<tr><td>59</td><td>transition</td><td>Smooth transition</td><td>transition: 0.3s ease</td><td>Smooth change</td></tr>
+<tr><td>60</td><td>transform: scale</td><td>Scale size</td><td>scale(1.2)</td><td>Makes bigger/smaller</td></tr>
+<tr><td>61</td><td>transform: rotate</td><td>Rotate</td><td>rotate(45deg)</td><td>Rotates element</td></tr>
+<tr><td>62</td><td>transform: translate</td><td>Move position</td><td>translateX(10px)</td><td>Moves element</td></tr>
+<tr><td>63</td><td>transform: skew</td><td>Skew shape</td><td>skew(10deg)</td><td>Skews shape</td></tr>
+<tr><td>64</td><td>animation</td><td>Animation</td><td>animation: move 2s infinite</td><td>Runs animation</td></tr>
+<tr><td>65</td><td>animation-name</td><td>Name of animation</td><td>move</td><td>Name defined in keyframes</td></tr>
+<tr><td>66</td><td>animation-duration</td><td>Duration</td><td>2s</td><td>Time of animation</td></tr>
+<tr><td>67</td><td>@keyframes</td><td>Keyframe steps</td><td>@keyframes move{0%{} 100%{}}</td><td>Defines animation steps</td></tr>
+<tr><td>68</td><td>filter</td><td>Filter effect</td><td>blur(5px) / grayscale(100%)</td><td>Image filter</td></tr>
+<tr><td>69</td><td>backdrop-filter</td><td>Backdrop filter</td><td>blur(10px)</td><td>Blurs behind element, glass effect</td></tr>
+<tr><td>70</td><td>clip-path</td><td>Clip shape</td><td>circle(50%)</td><td>Cuts shape</td></tr>
+<tr><td>71</td><td>object-fit</td><td>Object fitting</td><td>cover / contain</td><td>How image fits in box</td></tr>
+<tr><td>72</td><td>object-position</td><td>Object position</td><td>center top</td><td>Position inside box</td></tr>
+<tr><td>73</td><td>scroll-behavior</td><td>Scroll behavior</td><td>smooth</td><td>Smooth scrolling</td></tr>
+<tr><td>74</td><td>list-style</td><td>List style</td><td>none / disc / square</td><td>Bullet style</td></tr>
+<tr><td>75</td><td>list-style-type</td><td>List type</td><td>decimal / lower-alpha</td><td>Type of marker</td></tr>
+<tr><td>76</td><td>list-style-image</td><td>List image</td><td>url('bullet.png')</td><td>Image as bullet</td></tr>
+<tr><td>77</td><td>outline</td><td>Outline border</td><td>2px solid blue</td><td>Outer border, not affect layout</td></tr>
+<tr><td>78</td><td>resize</td><td>Resizable</td><td>both / horizontal / vertical</td><td>Allows resizing</td></tr>
+<tr><td>79</td><td>user-select</td><td>Text selection</td><td>none</td><td>Prevents text selection</td></tr>
+<tr><td>80</td><td>pointer-events</td><td>Pointer events</td><td>none</td><td>Disables mouse events</td></tr>
+
+<tr><td class="cat" colspan="5">F. Responsive - 5 Properties</td></tr>
+<tr><td>81</td><td>@media</td><td>Media query</td><td>@media(max-width:600px){}</td><td>Responsive for different screens</td></tr>
+<tr><td>82</td><td>@import</td><td>Import CSS</td><td>@import url('style.css')</td><td>Imports another CSS file</td></tr>
+<tr><td>83</td><td>@font-face</td><td>Custom font</td><td>@font-face{font-family: MyFont; src: url()}</td><td>Loads custom font</td></tr>
+<tr><td>84</td><td>var()</td><td>CSS variable</td><td>var(--main-color)</td><td>Uses custom variable</td></tr>
+<tr><td>85</td><td>calc()</td><td>Calculation</td><td>width: calc(100% - 20px)</td><td>Calculates value</td></tr>
+
+</table>
+
+<h2>7. CSS Units - Full List</h2>
+<table>
+<tr><th>Unit</th><th>Work</th><th>Feature</th></tr>
+<tr><td>px</td><td>Pixel - fixed size</td><td>Most used, fixed</td></tr>
+<tr><td>%</td><td>Percentage of parent</td><td>Responsive, relative to parent</td></tr>
+<tr><td>em</td><td>Relative to parent font size</td><td>Parent dependent</td></tr>
+<tr><td>rem</td><td>Relative to root font size</td><td>Root html font dependent, best for responsive</td></tr>
+<tr><td>vh</td><td>Viewport height 1% of height</td><td>100vh = full screen height</td></tr>
+<tr><td>vw</td><td>Viewport width 1% of width</td><td>100vw = full screen width</td></tr>
+<tr><td>vmin / vmax</td><td>Min/max of vh/vw</td><td>Smallest/largest viewport</td></tr>
+<tr><td>fr</td><td>Fraction in grid</td><td>1fr = 1 fraction of available space</td></tr>
+<tr><td>ch / ex</td><td>Character based</td><td>Width of 0 and x character</td></tr>
+</table>
+
+<h2>8. Extra - Example for Top Marks</h2>
+<div class="code">
+/* Gradient Example */<br>
+background: linear-gradient(to right, #2563eb, #9333ea);<br><br>
+/* Animation Example */<br>
+@keyframes upDown{<br>
+&nbsp;&nbsp;0%{transform:translateY(0)}<br>
+&nbsp;&nbsp;50%{transform:translateY(-10px)}<br>
+&nbsp;&nbsp;100%{transform:translateY(0)}<br>
+}<br>
+.box{animation: upDown 2s infinite}<br><br>
+/* Glass Effect */<br>
+.glass{background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border:1px solid rgba(255,255,255,0.3)}
+</div>
+
+</div>
+</body>
+</html>

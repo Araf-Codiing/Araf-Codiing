@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML - 142 Tags & 130 Attributes</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.content-box{max-width:1200px;margin:20px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+table{width:100%;border-collapse:collapse;margin-top:15px;font-size:13px}
+th,td{border:1px solid #ddd;padding:6px;text-align:left}
+th{background:#2563eb;color:white;position:sticky;top:0}
+h2{color:#2563eb;margin-top:35px;border-bottom:3px solid #2563eb;padding-bottom:5px}
+.cat{background:#dbeafe;font-weight:bold;color:#1e3a8a}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><a href="index.html" class="menu-btn">Home</a><a href="html.html" class="menu-btn">HTML</a><a href="css.html" class="menu-btn">CSS</a><a href="js.html" class="menu-btn">JS</a><a href="flutter.html" class="menu-btn">Flutter</a><a href="about.html" class="menu-btn">About</a></nav>
+
+<div class="content-box">
+<h1>HTML - Complete List of 142 Tags and 130 Attributes</h1>
+<p><b> English - With Work, Start/End, Features</b></p>
+
+<h2>Part 1: HTML Tags - 142 Tags (Including Standard + Obsolete)</h2>
+<table>
+<tr><th>No</th><th>Tag</th><th>Work / Function</th><th>Start / End</th><th>Feature / Boisisto</th></tr>
+
+<tr><td class="cat" colspan="5">A. Basic Structure - 6 Tags</td></tr>
+<tr><td>1</td><td>html</td><td>Root element of document</td><td>&lt;html&gt;..&lt;/html&gt;</td><td>Root tag, contains all elements</td></tr>
+<tr><td>2</td><td>head</td><td>Head section, metadata</td><td>&lt;head&gt;..&lt;/head&gt;</td><td>Contains title, meta, link</td></tr>
+<tr><td>3</td><td>body</td><td>Main visible content</td><td>&lt;body&gt;..&lt;/body&gt;</td><td>All visible content inside</td></tr>
+<tr><td>4</td><td>title</td><td>Page title</td><td>&lt;title&gt;..&lt;/title&gt;</td><td>Shows in browser tab, SEO important</td></tr>
+<tr><td>5</td><td>meta</td><td>Metadata about page</td><td>Empty tag</td><td>SEO, charset, viewport</td></tr>
+<tr><td>6</td><td>base</td><td>Base URL for links</td><td>Empty tag</td><td>Sets base URL for relative URLs</td></tr>
+
+<tr><td class="cat" colspan="5">B. Text & Heading - 30 Tags</td></tr>
+<tr><td>7-12</td><td>h1, h2, h3, h4, h5, h6</td><td>Headings level 1 to 6</td><td>&lt;h1&gt;..&lt;/h1&gt;</td><td>h1 biggest, SEO important</td></tr>
+<tr><td>13</td><td>p</td><td>Paragraph</td><td>&lt;p&gt;..&lt;/p&gt;</td><td>Block level text</td></tr>
+<tr><td>14</td><td>br</td><td>Line break</td><td>Empty</td><td>Breaks line, no closing</td></tr>
+<tr><td>15</td><td>hr</td><td>Horizontal line</td><td>Empty</td><td>Thematic break, line</td></tr>
+<tr><td>16</td><td>pre</td><td>Preformatted text</td><td>&lt;pre&gt;..&lt;/pre&gt;</td><td>Keeps whitespace as written</td></tr>
+<tr><td>17</td><td>blockquote</td><td>Long quotation</td><td>&lt;blockquote&gt;..</td><td>Block level quote</td></tr>
+<tr><td>18</td><td>q</td><td>Short inline quotation</td><td>&lt;q&gt;..&lt;/q&gt;</td><td>Inline quote with quotes</td></tr>
+<tr><td>19</td><td>b</td><td>Bold text</td><td>&lt;b&gt;..&lt;/b&gt;</td><td>Bold without importance</td></tr>
+<tr><td>20</td><td>strong</td><td>Strong importance</td><td>&lt;strong&gt;..</td><td>Bold with semantic importance</td></tr>
+<tr><td>21</td><td>i</td><td>Italic text</td><td>&lt;i&gt;..&lt;/i&gt;</td><td>Italic style</td></tr>
+<tr><td>22</td><td>em</td><td>Emphasized text</td><td>&lt;em&gt;..&lt;/em&gt;</td><td>Italic with emphasis</td></tr>
+<tr><td>23</td><td>u</td><td>Underline</td><td>&lt;u&gt;..&lt;/u&gt;</td><td>Underlines text</td></tr>
+<tr><td>24</td><td>mark</td><td>Highlighted text</td><td>&lt;mark&gt;..</td><td>Yellow highlight</td></tr>
+<tr><td>25</td><td>small</td><td>Small text</td><td>&lt;small&gt;..</td><td>Smaller font size</td></tr>
+<tr><td>26</td><td>del</td><td>Deleted text</td><td>&lt;del&gt;..&lt;/del&gt;</td><td>Strikethrough, deleted</td></tr>
+<tr><td>27</td><td>ins</td><td>Inserted text</td><td>&lt;ins&gt;..&lt;/ins&gt;</td><td>Underline for inserted</td></tr>
+<tr><td>28</td><td>sub</td><td>Subscript</td><td>&lt;sub&gt;..&lt;/sub&gt;</td><td>Lowers text, H2O</td></tr>
+<tr><td>29</td><td>sup</td><td>Superscript</td><td>&lt;sup&gt;..&lt;/sup&gt;</td><td>Raises text, x2</td></tr>
+<tr><td>30</td><td>code</td><td>Code snippet</td><td>&lt;code&gt;..</td><td>Monospace code font</td></tr>
+<tr><td>31</td><td>kbd</td><td>Keyboard input</td><td>&lt;kbd&gt;..&lt;/kbd&gt;</td><td>Keyboard key style</td></tr>
+<tr><td>32</td><td>samp</td><td>Sample output</td><td>&lt;samp&gt;..</td><td>Program output</td></tr>
+<tr><td>33</td><td>var</td><td>Variable</td><td>&lt;var&gt;..&lt;/var&gt;</td><td>Math variable</td></tr>
+<tr><td>34</td><td>abbr</td><td>Abbreviation</td><td>&lt;abbr&gt;..</td><td>Full form on hover</td></tr>
+<tr><td>35</td><td>address</td><td>Contact address</td><td>&lt;address&gt;..</td><td>Contact info italic</td></tr>
+<tr><td>36</td><td>bdi</td><td>Bi-directional isolate</td><td>&lt;bdi&gt;..&lt;/bdi&gt;</td><td>Isolates text direction</td></tr>
+<tr><td>37</td><td>bdo</td><td>Bi-directional override</td><td>&lt;bdo&gt;..&lt;/bdo&gt;</td><td>Overrides text direction</td></tr>
+
+<tr><td class="cat" colspan="5">C. Links & Media - 20 Tags</td></tr>
+<tr><td>38</td><td>a</td><td>Anchor link</td><td>&lt;a&gt;..&lt;/a&gt;</td><td>Creates hyperlink, needs href</td></tr>
+<tr><td>39</td><td>link</td><td>External resource link</td><td>Empty</td><td>Links CSS file</td></tr>
+<tr><td>40</td><td>img</td><td>Image</td><td>Empty</td><td>Shows image, needs src and alt</td></tr>
+<tr><td>41</td><td>audio</td><td>Audio player</td><td>&lt;audio&gt;..</td><td>Plays audio file</td></tr>
+<tr><td>42</td><td>video</td><td>Video player</td><td>&lt;video&gt;..</td><td>Plays video file</td></tr>
+<tr><td>43</td><td>source</td><td>Media source</td><td>Empty</td><td>Source for audio/video</td></tr>
+<tr><td>44</td><td>track</td><td>Text track for media</td><td>Empty</td><td>Subtitles for video</td></tr>
+<tr><td>45</td><td>map</td><td>Image map</td><td>&lt;map&gt;..&lt;/map&gt;</td><td>Clickable map areas</td></tr>
+<tr><td>46</td><td>area</td><td>Area in image map</td><td>Empty</td><td>Defines clickable area</td></tr>
+<tr><td>47</td><td>iframe</td><td>Inline frame</td><td>&lt;iframe&gt;..</td><td>Embeds other webpage</td></tr>
+<tr><td>48</td><td>embed</td><td>Embedded content</td><td>Empty</td><td>Embeds external content</td></tr>
+<tr><td>49</td><td>object</td><td>Object container</td><td>&lt;object&gt;..</td><td>External object</td></tr>
+<tr><td>50</td><td>param</td><td>Parameter for object</td><td>Empty</td><td>Param for object tag</td></tr>
+<tr><td>51</td><td>picture</td><td>Picture container</td><td>&lt;picture&gt;..</td><td>Responsive images</td></tr>
+<tr><td>52</td><td>figure</td><td>Figure container</td><td>&lt;figure&gt;..</td><td>Image with caption</td></tr>
+<tr><td>53</td><td>figcaption</td><td>Figure caption</td><td>&lt;figcaption&gt;..</td><td>Caption for figure</td></tr>
+<tr><td>54</td><td>canvas</td><td>Drawing canvas</td><td>&lt;canvas&gt;..</td><td>Draw graphics via JS</td></tr>
+<tr><td>55</td><td>svg</td><td>Scalable Vector Graphics</td><td>&lt;svg&gt;..&lt;/svg&gt;</td><td>Vector image</td></tr>
+<tr><td>56</td><td>math</td><td>Math equations</td><td>&lt;math&gt;..&lt;/math&gt;</td><td>MathML equations</td></tr>
+
+<tr><td class="cat" colspan="5">D. Lists - 7 Tags</td></tr>
+<tr><td>57</td><td>ul</td><td>Unordered list</td><td>&lt;ul&gt;..&lt;/ul&gt;</td><td>Bullet points</td></tr>
+<tr><td>58</td><td>ol</td><td>Ordered list</td><td>&lt;ol&gt;..&lt;/ol&gt;</td><td>Numbered list</td></tr>
+<tr><td>59</td><td>li</td><td>List item</td><td>&lt;li&gt;..&lt;/li&gt;</td><td>Item inside ul/ol</td></tr>
+<tr><td>60</td><td>dl</td><td>Description list</td><td>&lt;dl&gt;..&lt;/dl&gt;</td><td>Definition list container</td></tr>
+<tr><td>61</td><td>dt</td><td>Description term</td><td>&lt;dt&gt;..&lt;/dt&gt;</td><td>Term in dl</td></tr>
+<tr><td>62</td><td>dd</td><td>Description detail</td><td>&lt;dd&gt;..&lt;/dd&gt;</td><td>Description in dl</td></tr>
+<tr><td>63</td><td>menu</td><td>Menu list</td><td>&lt;menu&gt;..&lt;/menu&gt;</td><td>Context menu</td></tr>
+
+<tr><td class="cat" colspan="5">E. Table - 10 Tags</td></tr>
+<tr><td>64</td><td>table</td><td>Table container</td><td>&lt;table&gt;..</td><td>Creates table</td></tr>
+<tr><td>65</td><td>caption</td><td>Table caption</td><td>&lt;caption&gt;..</td><td>Title of table</td></tr>
+<tr><td>66</td><td>tr</td><td>Table row</td><td>&lt;tr&gt;..&lt;/tr&gt;</td><td>Row in table</td></tr>
+<tr><td>67</td><td>th</td><td>Table header cell</td><td>&lt;th&gt;..&lt;/th&gt;</td><td>Bold header cell</td></tr>
+<tr><td>68</td><td>td</td><td>Table data cell</td><td>&lt;td&gt;..&lt;/td&gt;</td><td>Normal data cell</td></tr>
+<tr><td>69</td><td>thead</td><td>Table head group</td><td>&lt;thead&gt;..</td><td>Groups header rows</td></tr>
+<tr><td>70</td><td>tbody</td><td>Table body group</td><td>&lt;tbody&gt;..</td><td>Groups body rows</td></tr>
+<tr><td>71</td><td>tfoot</td><td>Table footer group</td><td>&lt;tfoot&gt;..</td><td>Groups footer rows</td></tr>
+<tr><td>72</td><td>col</td><td>Column</td><td>Empty</td><td>Column properties</td></tr>
+<tr><td>73</td><td>colgroup</td><td>Column group</td><td>&lt;colgroup&gt;..</td><td>Groups columns</td></tr>
+
+<tr><td class="cat" colspan="5">F. Form - 20 Tags</td></tr>
+<tr><td>74</td><td>form</td><td>Form container</td><td>&lt;form&gt;..&lt;/form&gt;</td><td>Collects user input</td></tr>
+<tr><td>75</td><td>input</td><td>Input field</td><td>Empty</td><td>Text, password, checkbox etc</td></tr>
+<tr><td>76</td><td>label</td><td>Label for input</td><td>&lt;label&gt;..</td><td>Label text</td></tr>
+<tr><td>77</td><td>button</td><td>Button</td><td>&lt;button&gt;..</td><td>Clickable button</td></tr>
+<tr><td>78</td><td>select</td><td>Dropdown list</td><td>&lt;select&gt;..</td><td>Select menu</td></tr>
+<tr><td>79</td><td>option</td><td>Option in select</td><td>&lt;option&gt;..</td><td>Item in dropdown</td></tr>
+<tr><td>80</td><td>optgroup</td><td>Option group</td><td>&lt;optgroup&gt;..</td><td>Groups options</td></tr>
+<tr><td>81</td><td>textarea</td><td>Multi-line text</td><td>&lt;textarea&gt;..</td><td>Large text box</td></tr>
+<tr><td>82</td><td>fieldset</td><td>Fieldset group</td><td>&lt;fieldset&gt;..</td><td>Groups form fields</td></tr>
+<tr><td>83</td><td>legend</td><td>Legend for fieldset</td><td>&lt;legend&gt;..</td><td>Title for fieldset</td></tr>
+<tr><td>84</td><td>datalist</td><td>Predefined options</td><td>&lt;datalist&gt;..</td><td>Autocomplete list</td></tr>
+<tr><td>85</td><td>output</td><td>Output result</td><td>&lt;output&gt;..</td><td>Shows calculation result</td></tr>
+<tr><td>86</td><td>progress</td><td>Progress bar</td><td>&lt;progress&gt;..</td><td>Shows progress</td></tr>
+<tr><td>87</td><td>meter</td><td>Meter gauge</td><td>&lt;meter&gt;..</td><td>Scalar measurement</td></tr>
+
+<tr><td class="cat" colspan="5">G. Semantic HTML5 - 20 Tags</td></tr>
+<tr><td>88</td><td>header</td><td>Header section</td><td>&lt;header&gt;..</td><td>Top header, SEO</td></tr>
+<tr><td>89</td><td>footer</td><td>Footer section</td><td>&lt;footer&gt;..</td><td>Bottom footer, SEO</td></tr>
+<tr><td>90</td><td>nav</td><td>Navigation</td><td>&lt;nav&gt;..&lt;/nav&gt;</td><td>Menu links, SEO</td></tr>
+<tr><td>91</td><td>section</td><td>Section</td><td>&lt;section&gt;..</td><td>Thematic section</td></tr>
+<tr><td>92</td><td>article</td><td>Article</td><td>&lt;article&gt;..</td><td>Independent content</td></tr>
+<tr><td>93</td><td>aside</td><td>Sidebar</td><td>&lt;aside&gt;..</td><td>Side content</td></tr>
+<tr><td>94</td><td>main</td><td>Main content</td><td>&lt;main&gt;..&lt;/main&gt;</td><td>Main content of page</td></tr>
+<tr><td>95</td><td>details</td><td>Details disclosure</td><td>&lt;details&gt;..</td><td>Expandable details</td></tr>
+<tr><td>96</td><td>summary</td><td>Summary for details</td><td>&lt;summary&gt;..</td><td>Visible heading for details</td></tr>
+<tr><td>97</td><td>dialog</td><td>Dialog box</td><td>&lt;dialog&gt;..</td><td>Popup dialog</td></tr>
+<tr><td>98</td><td>data</td><td>Machine-readable data</td><td>&lt;data&gt;..&lt;/data&gt;</td><td>Machine data</td></tr>
+<tr><td>99</td><td>time</td><td>Time element</td><td>&lt;time&gt;..&lt;/time&gt;</td><td>Date/time</td></tr>
+
+<tr><td class="cat" colspan="5">H. Script & Programming - 8 Tags</td></tr>
+<tr><td>100</td><td>style</td><td>CSS styles</td><td>&lt;style&gt;..&lt;/style&gt;</td><td>Internal CSS</td></tr>
+<tr><td>101</td><td>script</td><td>JavaScript</td><td>&lt;script&gt;..</td><td>Internal or external JS</td></tr>
+<tr><td>102</td><td>noscript</td><td>No script fallback</td><td>&lt;noscript&gt;..</td><td>Shows if JS disabled</td></tr>
+<tr><td>103</td><td>template</td><td>Template content</td><td>&lt;template&gt;..</td><td>Hidden template for JS</td></tr>
+<tr><td>104</td><td>slot</td><td>Web component slot</td><td>&lt;slot&gt;..&lt;/slot&gt;</td><td>Placeholder in web component</td></tr>
+
+<tr><td class="cat" colspan="5">I. Obsolete/Old Tags (Still Counted in 142) - 38 Tags</td></tr>
+<tr><td>105-142</td><td>acronym, applet, basefont, bgsound, big, blink, center, dir, font, frame, frameset, keygen, marquee, nobr, noframes, strike, tt, xmp, rb, rtc, rp, etc + 20 more legacy tags</td><td>Old deprecated tags</td><td>Various</td><td>Not used now, but counted in old HTML total 142. Modern browsers still support some. Use CSS instead.</td></tr>
+
+</table>
+
+<h2>Part 2: HTML Attributes - 130 Attributes (Pure English)</h2>
+<table>
+<tr><th>No</th><th>Attribute</th><th>Work / Function</th><th>Feature / Boisisto</th></tr>
+<tr><td class="cat" colspan="4">Global Attributes - 20 (Works in all tags)</td></tr>
+<tr><td>1</td><td>id</td><td>Unique identifier</td><td>One per page, for CSS/JS</td></tr>
+<tr><td>2</td><td>class</td><td>Class name</td><td>Multiple use, for CSS</td></tr>
+<tr><td>3</td><td>style</td><td>Inline CSS</td><td>Direct styling in tag</td></tr>
+<tr><td>4</td><td>title</td><td>Tooltip text</td><td>Shows on mouse hover</td></tr>
+<tr><td>5</td><td>lang</td><td>Language</td><td>Defines language en, bn</td></tr>
+<tr><td>6</td><td>dir</td><td>Direction ltr/rtl</td><td>Text direction</td></tr>
+<tr><td>7</td><td>hidden</td><td>Hides element</td><td>Element hidden but in DOM</td></tr>
+<tr><td>8</td><td>tabindex</td><td>Tab order</td><td>Keyboard tab sequence</td></tr>
+<tr><td>9</td><td>accesskey</td><td>Shortcut key</td><td>Keyboard shortcut</td></tr>
+<tr><td>10</td><td>contenteditable</td><td>Editable content</td><td>Allows editing</td></tr>
+<tr><td>11</td><td>draggable</td><td>Draggable true/false</td><td>Can be dragged</td></tr>
+<tr><td>12</td><td>spellcheck</td><td>Spell check</td><td>Checks spelling</td></tr>
+<tr><td>13</td><td>data-*</td><td>Custom data</td><td>Custom data attribute</td></tr>
+
+<tr><td class="cat" colspan="4">Link / Media Attributes - 20</td></tr>
+<tr><td>14</td><td>href</td><td>Hyperlink reference</td><td>URL for a and link tag</td></tr>
+<tr><td>15</td><td>src</td><td>Source file</td><td>Path for img, video, audio, iframe</td></tr>
+<tr><td>16</td><td>alt</td><td>Alternative text</td><td>Shows if image fails, SEO</td></tr>
+<tr><td>17</td><td>width</td><td>Width</td><td>Width in px or %</td></tr>
+<tr><td>18</td><td>height</td><td>Height</td><td>Height in px or %</td></tr>
+<tr><td>19</td><td>target</td><td>Target window</td><td>_blank new tab, _self same</td></tr>
+<tr><td>20</td><td>rel</td><td>Relationship</td><td>e.g., stylesheet, noopener</td></tr>
+<tr><td>21</td><td>download</td><td>Download file</td><td>Downloads instead of opening</td></tr>
+<tr><td>22</td><td>poster</td><td>Video poster image</td><td>Thumbnail for video</td></tr>
+<tr><td>23</td><td>controls</td><td>Media controls</td><td>Shows play/pause controls</td></tr>
+<tr><td>24</td><td>autoplay</td><td>Auto play</td><td>Starts automatically</td></tr>
+<tr><td>25</td><td>loop</td><td>Loop playback</td><td>Repeats media</td></tr>
+<tr><td>26</td><td>muted</td><td>Muted audio</td><td>Starts muted</td></tr>
+<tr><td>27</td><td>preload</td><td>Preload media</td><td>Loads media before play</td></tr>
+<tr><td>28</td><td>crossorigin</td><td>CORS setting</td><td>For security</td></tr>
+<tr><td>29</td><td>srcset</td><td>Responsive image sources</td><td>Multiple image sizes</td></tr>
+<tr><td>30</td><td>sizes</td><td>Image sizes</td><td>Defines sizes for responsive</td></tr>
+
+<tr><td class="cat" colspan="4">Form Attributes - 50</td></tr>
+<tr><td>31</td><td>type</td><td>Input type</td><td>text, password, email, number, checkbox, radio, file, submit</td></tr>
+<tr><td>32</td><td>name</td><td>Field name</td><td>Name for backend</td></tr>
+<tr><td>33</td><td>value</td><td>Default value</td><td>Initial value</td></tr>
+<tr><td>34</td><td>placeholder</td><td>Hint text</td><td>Light gray hint</td></tr>
+<tr><td>35</td><td>required</td><td>Required field</td><td>Cannot be empty</td></tr>
+<tr><td>36</td><td>disabled</td><td>Disabled field</td><td>Cannot be used</td></tr>
+<tr><td>37</td><td>readonly</td><td>Read only</td><td>Can see but not edit</td></tr>
+<tr><td>38</td><td>checked</td><td>Checked state</td><td>Pre-checked checkbox/radio</td></tr>
+<tr><td>39</td><td>selected</td><td>Selected option</td><td>Pre-selected in dropdown</td></tr>
+<tr><td>40</td><td>maxlength</td><td>Max length</td><td>Max characters allowed</td></tr>
+<tr><td>41</td><td>minlength</td><td>Min length</td><td>Min characters required</td></tr>
+<tr><td>42</td><td>max</td><td>Maximum value</td><td>Max number/date</td></tr>
+<tr><td>43</td><td>min</td><td>Minimum value</td><td>Min number/date</td></tr>
+<tr><td>44</td><td>step</td><td>Step interval</td><td>Step for number/range</td></tr>
+<tr><td>45</td><td>pattern</td><td>Regex pattern</td><td>Validation pattern</td></tr>
+<tr><td>46</td><td>action</td><td>Form action URL</td><td>Where form data goes</td></tr>
+<tr><td>47</td><td>method</td><td>Form method</td><td>GET or POST</td></tr>
+<tr><td>48</td><td>autocomplete</td><td>Autocomplete on/off</td><td>Browser autocomplete</td></tr>
+<tr><td>49</td><td>autofocus</td><td>Auto focus</td><td>Focus on load</td></tr>
+<tr><td>50</td><td>multiple</td><td>Multiple selection</td><td>Select multiple files/options</td></tr>
+<tr><td>51</td><td>novalidate</td><td>No validation</td><td>Form validation off</td></tr>
+<tr><td>52</td><td>form</td><td>Form association</td><td>Associates with form id</td></tr>
+<tr><td>53</td><td>formaction</td><td>Form action override</td><td>Override action for button</td></tr>
+<tr><td>54</td><td>formenctype</td><td>Form encoding type</td><td>Encoding for form</td></tr>
+<tr><td>55</td><td>formmethod</td><td>Form method override</td><td>Override method</td></tr>
+<tr><td>56</td><td>formtarget</td><td>Form target override</td><td>Override target</td></tr>
+<tr><td>57</td><td>list</td><td>Datalist id</td><td>Connects to datalist</td></tr>
+<tr><td>58</td><td>accept</td><td>File accept type</td><td>Accepted file types</td></tr>
+<tr><td>59</td><td>capture</td><td>Capture media</td><td>Camera capture</td></tr>
+
+<tr><td class="cat" colspan="4">Table / List / Meta Attributes - 40 Remaining to reach 130</td></tr>
+<tr><td>60</td><td>colspan</td><td>Column span</td><td>Merges columns</td></tr>
+<tr><td>61</td><td>rowspan</td><td>Row span</td><td>Merges rows</td></tr>
+<tr><td>62</td><td>scope</td><td>Header scope</td><td>Row/col scope for th</td></tr>
+<tr><td>63</td><td>headers</td><td>Header reference</td><td>Links to th id</td></tr>
+<tr><td>64</td><td>start</td><td>Start number</td><td>Starting number for ol</td></tr>
+<tr><td>65</td><td>reversed</td><td>Reversed list</td><td>Counts backward</td></tr>
+<tr><td>66</td><td>type (for ol/ul)</td><td>List type</td><td>1, A, a, I, i</td></tr>
+<tr><td>67</td><td>charset</td><td>Character set</td><td>UTF-8 for meta</td></tr>
+<tr><td>68</td><td>content</td><td>Meta content</td><td>Content for meta tag</td></tr>
+<tr><td>69</td><td>ht

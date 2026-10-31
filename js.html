@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript - Complete A-Z </title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.content-box{max-width:1200px;margin:20px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+table{width:100%;border-collapse:collapse;margin-top:15px;font-size:13px}
+th,td{border:1px solid #ddd;padding:6px;text-align:left}
+th{background:#2563eb;color:white;position:sticky;top:0}
+h2{color:#2563eb;margin-top:35px;border-bottom:3px solid #2563eb;padding-bottom:5px}
+.code{background:#0f172a;color:#22c55e;padding:12px;border-radius:6px;margin:10px 0;font-family:monospace;overflow-x:auto;white-space:pre-wrap}
+.cat{background:#dbeafe;font-weight:bold;color:#1e3a8a}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><a href="index.html" class="menu-btn">Home</a><a href="html.html" class="menu-btn">HTML</a><a href="css.html" class="menu-btn">CSS</a><a href="js.html" class="menu-btn">JS</a><a href="flutter.html" class="menu-btn">Flutter</a><a href="about.html" class="menu-btn">About</a></nav>
+
+<div class="content-box">
+<h1>JavaScript - Complete A-Z </h1>
+
+<h2>1. What is JavaScript?</h2>
+<p><b>JavaScript = Programming Language for Web</b><br>
+- Created by Brendan Eich in 1995 in 10 days<br>
+- Makes website interactive and dynamic<br>
+- Runs in browser (Client-side) and server (Node.js)<br>
+- Latest version ECMAScript 2024 (ES15)<br>
+- Not related to Java - different language</p>
+
+<h2>2. Features of JavaScript - 10 Points</h2>
+<ul>
+<li>Dynamic and interactive - responds to user actions</li>
+<li>Lightweight, interpreted language - no compilation needed</li>
+<li>Object-Oriented and Event-driven programming</li>
+<li>Works with HTML and CSS - controls DOM</li>
+<li>Cross-browser compatible - all browsers support</li>
+<li>Handles form validation, animation, API calls</li>
+<li>Supports ES6 modern syntax - let, const, arrow function</li>
+<li>Asynchronous programming - Promise, async/await</li>
+<li>Large ecosystem - React, Vue, Node.js libraries</li>
+<li>Both front-end and back-end (MERN stack)</li>
+</ul>
+
+<h2>3. How to Add JavaScript - 3 Ways</h2>
+<div class="code">1. Internal JS: &lt;script&gt; alert("Hello"); &lt;/script&gt; - Inside HTML head or body
+2. External JS: &lt;script src="app.js"&gt;&lt;/script&gt; - Separate .js file, BEST
+3. Inline JS: &lt;button onclick="alert('Hi')"&gt; - Inside tag attribute</div>
+
+<h2>4. Variables - 3 Types</h2>
+<table>
+<tr><th>Keyword</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>var</td><td>var x = 10;</td><td>Old variable, function scope</td><td>Can be redeclared, avoid now</td></tr>
+<tr><td>let</td><td>let x = 10;</td><td>Modern variable, block scope</td><td>Cannot redeclare in same scope, value can change, BEST</td></tr>
+<tr><td>const</td><td>const PI = 3.14;</td><td>Constant, block scope</td><td>Cannot be changed, cannot redeclare, for fixed value</td></tr>
+</table>
+
+<h2>5. Data Types - 8 Types</h2>
+<table>
+<tr><th>Type</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>String</td><td>"Hello" or 'Hi'</td><td>Text data</td><td>Inside quotes</td></tr>
+<tr><td>Number</td><td>10, 3.14</td><td>Numeric data</td><td>Integer and float both Number</td></tr>
+<tr><td>BigInt</td><td>123n</td><td>Very big integer</td><td>For large numbers, add n</td></tr>
+<tr><td>Boolean</td><td>true / false</td><td>True or false logic</td><td>For conditions</td></tr>
+<tr><td>Undefined</td><td>let x;</td><td>Variable declared but no value</td><td>Default value</td></tr>
+<tr><td>Null</td><td>let x = null</td><td>Empty intentional value</td><td>Manually set empty</td></tr>
+<tr><td>Object</td><td>{name:"John"}</td><td>Collection of properties</td><td>Key-value pair</td></tr>
+<tr><td>Array</td><td>[1,2,3]</td><td>List of values, type of Object</td><td>Ordered list, index starts 0</td></tr>
+<tr><td>Symbol (ES6)</td><td>Symbol('id')</td><td>Unique identifier</td><td>Always unique value</td></tr>
+</table>
+
+<h2>6. Operators - Full List</h2>
+<table>
+<tr><th>Category</th><th>Operator</th><th>Example</th><th>Work / Feature</th></tr>
+<tr><td class="cat" colspan="4">A. Arithmetic - 7 Operators</td></tr>
+<tr><td>Arithmetic</td><td>+ - * / % ** ++ --</td><td>x + y, x++, x**2</td><td>Add, subtract, multiply, divide, remainder, power, increment</td></tr>
+<tr><td class="cat" colspan="4">B. Assignment - 6 Operators</td></tr>
+<tr><td>Assignment</td><td>= += -= *= /= %=</td><td>x += 5 means x = x+5</td><td>Assigns value with operation</td></tr>
+<tr><td class="cat" colspan="4">C. Comparison - 8 Operators</td></tr>
+<tr><td>Comparison</td><td>== === != !== > < >= <=</td><td>x == y, x === y</td><td>== checks value only, === checks value + type, BEST to use ===</td></tr>
+<tr><td class="cat" colspan="4">D. Logical - 3 Operators</td></tr>
+<tr><td>Logical</td><td>&& || !</td><td>x && y, x || y, !x</td><td>AND, OR, NOT logic</td></tr>
+<tr><td class="cat" colspan="4">E. Other Operators</td></tr>
+<tr><td>Type</td><td>typeof, instanceof</td><td>typeof x</td><td>Checks data type</td></tr>
+<tr><td>Ternary</td><td>? :</td><td>condition ? true : false</td><td>Short if-else</td></tr>
+<tr><td>Nullish</td><td>??</td><td>x ?? y</td><td>Returns y if x is null/undefined - ES2020</td></tr>
+<tr><td>Optional Chain</td><td>?.</td><td>user?.name</td><td>Safe access if exists</td></tr>
+<tr><td>Spread</td><td>...</td><td>...arr</td><td>Spreads array/object - ES6</td></tr>
+</table>
+
+<h2>7. Control Flow - Conditions</h2>
+<table>
+<tr><th>Statement</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>if</td><td>if(x>10){ }</td><td>Executes if condition true</td><td>Basic condition</td></tr>
+<tr><td>if else</td><td>if(x>10){ } else{ }</td><td>One of two paths</td><td>If false goes to else</td></tr>
+<tr><td>else if</td><td>if.. else if.. else</td><td>Multiple conditions</td><td>Checks multiple times</td></tr>
+<tr><td>switch</td><td>switch(day){case 1:.. break; default:}</td><td>Multiple fixed values check</td><td>Better than many else if, needs break</td></tr>
+</table>
+
+<h2>8. Loops - 6 Types</h2>
+<table>
+<tr><th>Loop</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>for</td><td>for(let i=0; i<5; i++){ }</td><td>Repeats fixed times</td><td>Most used, 3 parts: init; condition; increment</td></tr>
+<tr><td>while</td><td>while(x<5){ x++ }</td><td>Repeats while condition true</td><td>Condition first, may run 0 times</td></tr>
+<tr><td>do while</td><td>do{ x++ }while(x<5)</td><td>Repeats at least once</td><td>Runs once even if condition false</td></tr>
+<tr><td>for...in</td><td>for(let key in obj){ }</td><td>Loops object keys</td><td>For object properties</td></tr>
+<tr><td>for...of</td><td>for(let val of arr){ }</td><td>Loops array values</td><td>For array values, ES6, BEST</td></tr>
+<tr><td>forEach</td><td>arr.forEach((v)=>{ })</td><td>Array method loop</td><td>Modern array looping</td></tr>
+</table>
+
+<h2>9. Functions - 6 Types</h2>
+<table>
+<tr><th>Type</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>Normal Function</td><td>function sum(a,b){ return a+b }</td><td>Reusable block of code</td><td>Can be called many times, hoisted</td></tr>
+<tr><td>Function Expression</td><td>const sum = function(a,b){ }</td><td>Function as variable value</td><td>Not hoisted</td></tr>
+<tr><td>Arrow Function (ES6)</td><td>const sum = (a,b) => a+b</td><td>Shorter function syntax</td><td>Modern, no this binding, BEST</td></tr>
+<tr><td>Anonymous Function</td><td>setTimeout(function(){ }, 1000)</td><td>Function without name</td><td>Used as callback</td></tr>
+<tr><td>Callback Function</td><td>function main(cb){ cb() }</td><td>Function passed as argument</td><td>Called after another function finishes</td></tr>
+<tr><td>IIFE</td><td>(function(){ })()</td><td>Immediately Invoked</td><td>Runs immediately, avoids global pollution</td></tr>
+</table>
+
+<h2>10. DOM - Document Object Model (Most Important)</h2>
+<table>
+<tr><th>Method</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>getElementById</td><td>document.getElementById("id")</td><td>Selects by id</td><td>Fastest, returns single element</td></tr>
+<tr><td>querySelector</td><td>document.querySelector(".class")</td><td>Selects first match by CSS selector</td><td>Modern, can use any selector, BEST</td></tr>
+<tr><td>querySelectorAll</td><td>document.querySelectorAll("p")</td><td>Selects all matches</td><td>Returns NodeList array-like</td></tr>
+<tr><td>getElementsByClassName</td><td>document.getElementsByClassName("box")</td><td>Selects by class</td><td>Returns HTMLCollection</td></tr>
+<tr><td>innerHTML / innerText / textContent</td><td>el.innerHTML = "&lt;b&gt;Hi&lt;/b&gt;"</td><td>Changes content</td><td>innerHTML parses HTML, innerText only text</td></tr>
+<tr><td>createElement / appendChild</td><td>let div = document.createElement("div"); body.appendChild(div)</td><td>Creates new element</td><td>Dynamically adds element</td></tr>
+<tr><td>setAttribute / getAttribute</td><td>el.setAttribute("src","img.jpg")</td><td>Sets/gets attribute</td><td>Changes attribute value</td></tr>
+<tr><td>classList.add/remove/toggle</td><td>el.classList.add("active")</td><td>Manages classes</td><td>Adds/removes class dynamically</td></tr>
+<tr><td>style property</td><td>el.style.color = "red"</td><td>Changes inline CSS</td><td>Direct style change</td></tr>
+</table>
+
+<h2>11. Events - 15 Main Events</h2>
+<table>
+<tr><th>Event</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>click</td><td>btn.addEventListener("click", ()=>{})</td><td>On mouse click</td><td>Most used event</td></tr>
+<tr><td>dblclick</td><td>Double click</td><td>On double click</td><td>Double click event</td></tr>
+<tr><td>mouseover / mouseout</td><td>Mouse over/out</td><td>Mouse enters/leaves</td><td>Hover effect via JS</td></tr>
+<tr><td>keydown / keyup / keypress</td><td>Keyboard events</td><td>Key pressed/released</td><td>For keyboard input</td></tr>
+<tr><td>input / change</td><td>Input event</td><td>Value changes</td><td>For form live validation</td></tr>
+<tr><td>submit</td><td>Form submit</td><td>Form submitted</td><td>Use preventDefault() to stop reload</td></tr>
+<tr><td>load</td><td>window.onload</td><td>Page fully loaded</td><td>Runs after page load</td></tr>
+<tr><td>DOMContentLoaded</td><td>DOM loaded</td><td>DOM ready</td><td>Faster than load, BEST</td></tr>
+<tr><td>focus / blur</td><td>Focus events</td><td>Input focused/lost focus</td><td>For input highlighting</td></tr>
+<tr><td>scroll</td><td>Scroll event</td><td>Page scrolled</td><td>For scroll animation</td></tr>
+<tr><td>resize</td><td>Window resized</td><td>Window size changed</td><td>For responsive JS</td></tr>
+</table>
+
+<h2>12. ES6 Modern JavaScript - 15 Features (For Top Marks)</h2>
+<table>
+<tr><th>Feature</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>let / const</td><td>let x = 5; const y = 10;</td><td>Block scoped variables</td><td>Modern replacement for var</td></tr>
+<tr><td>Arrow Function</td><td>() => {}</td><td>Short function</td><td>Cleaner code</td></tr>
+<tr><td>Template Literals</td><td>`Hello ${name}`</td><td>String with variable</td><td>Uses backtick and ${}</td></tr>
+<tr><td>Destructuring</td><td>const {name, age} = user</td><td>Extracts values from object/array</td><td>Quick variable assignment</td></tr>
+<tr><td>Spread Operator</td><td>[...arr1, ...arr2]</td><td>Spreads array/object</td><td>Merges arrays/objects</td></tr>
+<tr><td>Rest Parameter</td><td>function sum(...nums)</td><td>Collects remaining arguments</td><td>For unlimited arguments</td></tr>
+<tr><td>Default Parameter</td><td>function greet(name="Guest")</td><td>Default value if not passed</td><td>Fallback value</td></tr>
+<tr><td>Array Methods</td><td>map(), filter(), reduce(), find()</td><td>Modern array handling</td><td>map transforms, filter filters, reduce calculates</td></tr>
+<tr><td>Promise</td><td>new Promise((resolve, reject)=>{})</td><td>Handles async operations</td><td>For API calls</td></tr>
+<tr><td>async / await</td><td>async function getData(){ await fetch() }</td><td>Simplifies Promise</td><td>Modern async handling, BEST</td></tr>
+<tr><td>fetch API</td><td>fetch("https://api.com")</td><td>Calls API</td><td>Modern replacement for XMLHttpRequest</td></tr>
+<tr><td>Modules</td><td>import / export</td><td>Split code into files</td><td>Reusable modules</td></tr>
+<tr><td>Classes</td><td>class Person{ constructor(){} }</td><td>OOP class syntax</td><td>Object-oriented structure</td></tr>
+<tr><td>for...of</td><td>for(let x of arr)</td><td>Loop array values</td><td>Better than for loop</td></tr>
+<tr><td>Optional Chaining ?.</td><td>user?.profile?.name</td><td>Safe property access</td><td>No error if undefined</td></tr>
+</table>
+
+<h2>13. Storage & Other Important</h2>
+<table>
+<tr><th>Concept</th><th>Example</th><th>Work</th><th>Feature</th></tr>
+<tr><td>localStorage</td><td>localStorage.setItem("name","John")</td><td>Stores data permanently in browser</td><td>Stays after browser closed, 5MB</td></tr>
+<tr><td>sessionStorage</td><td>sessionStorage.setItem("x",1)</td><td>Stores for session only</td><td>Clears when tab closed</td></tr>
+<tr><td>JSON</td><td>JSON.stringify(obj) / JSON.parse(str)</td><td>Converts object to string and back</td><td>For storage and API communication</td></tr>
+<tr><td>setTimeout / setInterval</td><td>setTimeout(()=>{}, 1000)</td><td>Delays or repeats execution</td><td>Timeout once, Interval repeats</td></tr>
+<tr><td>Hoisting</td><td>var and function declarations moved to top</td><td>Declarations hoisted</td><td>let/const not hoisted</td></tr>
+<tr><td>Closure</td><td>Function inside function remembers outer variable</td><td>Preserves outer scope</td><td>Important interview concept</td></tr>
+<tr><td>this keyword</td><td>this refers to current object</td><td>Context reference</td><td>Changes based on where called</td></tr>
+</table>
+
+<h2>14. Example Code - Top Marks</h2>
+<div class="code">// Modern JS Example - Pure English
+const users = [
+  {id:1, name:"John", age:25},
+  {id:2, name:"Jane", age:22}
+];
+
+// Arrow + map + template literal
+const names = users.map(user => `Name: ${user.name}`);
+
+// Async Await with Fetch
+async function getUsers(){
+  try{
+    const response = await fetch("https://api.example.com/users");
+    const data = await response.json();
+    console.log(data);
+  } catch(error){
+    console.log("Error:", error);
+  }
+}
+
+// DOM + Event
+document.querySelector("#btn").addEventListener("click", () => {
+  document.querySelector("#box").classList.toggle("active");
+});
+
+// LocalStorage
+localStorage.setItem("user", JSON.stringify({name:"John"}));
+const savedUser = JSON.parse(localStorage.getItem("user"));
+</div>
+
+</div>
+</body>
+</html>

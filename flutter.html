@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flutter - Complete A-Z </title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.content-box{max-width:1200px;margin:20px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+table{width:100%;border-collapse:collapse;margin-top:15px;font-size:13px}
+th,td{border:1px solid #ddd;padding:6px;text-align:left}
+th{background:#2563eb;color:white;position:sticky;top:0}
+h2{color:#2563eb;margin-top:35px;border-bottom:3px solid #2563eb;padding-bottom:5px}
+.code{background:#0f172a;color:#22c55e;padding:12px;border-radius:6px;margin:10px 0;font-family:monospace;overflow-x:auto;white-space:pre-wrap}
+.cat{background:#dbeafe;font-weight:bold;color:#1e3a8a}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><a href="index.html" class="menu-btn">Home</a><a href="html.html" class="menu-btn">HTML</a><a href="css.html" class="menu-btn">CSS</a><a href="js.html" class="menu-btn">JS</a><a href="flutter.html" class="menu-btn">Flutter</a><a href="about.html" class="menu-btn">About</a></nav>
+
+<div class="content-box">
+<h1>Flutter - Complete A-Z </h1>
+
+<h2>1. What is Flutter?</h2>
+<p><b>Flutter = UI Toolkit for Building Natively Compiled Apps</b><br>
+- Created by Google in 2017<br>
+- Language: Dart (also by Google)<br>
+- One codebase for Android, iOS, Web, Desktop<br>
+- Uses Widgets - Everything is a Widget<br>
+- Latest version Flutter 3.22 with Impeller engine<br>
+- Fast, beautiful, open-source</p>
+
+<h2>2. Features of Flutter - 10 Points</h2>
+<ul>
+<li>Single codebase for 6 platforms - Android, iOS, Web, Windows, macOS, Linux</li>
+<li>Hot Reload - See changes instantly in 1 second</li>
+<li>Everything is Widget - Text, Button, Padding all widgets</li>
+<li>Fast performance - Compiles to native ARM code, 60/120 FPS</li>
+<li>Beautiful UI - Material Design and Cupertino (iOS) widgets built-in</li>
+<li>Open Source and free - Large community support</li>
+<li>Dart language - Easy to learn, similar to JavaScript/Java</li>
+<li>Rich widget library - 1000+ ready widgets</li>
+<li>State Management - Provider, Bloc, Riverpod, GetX</li>
+<li>Backed by Google - Used by Google Pay, eBay, Alibaba</li>
+</ul>
+
+<h2>3. Types of Widgets - 3 Main Types</h2>
+<div class="code">1. StatelessWidget: No state change - static screen like Text, Icon
+   Example: class MyApp extends StatelessWidget
+
+2. StatefulWidget: State can change - dynamic screen like Checkbox, Form
+   Example: class MyApp extends StatefulWidget + createState()
+
+3. InheritedWidget: Passes data down the tree - like Theme, Provider
+   Example: InheritedWidget for sharing data</div>
+
+<h2>4. Flutter Architecture - Core Concept</h2>
+<div class="code">Everything is a Widget Tree:
+MaterialApp
+ └─ Scaffold
+     ├─ AppBar
+     ├─ Body (Column / Row / Container)
+     │   ├─ Text
+     │   ├─ Image
+     │   └─ Button
+     └─ FloatingActionButton
+
+Formula: UI = f(State) - UI changes when State changes</div>
+
+<h2>5. Widgets - 100+ Widgets Full List (Work + Feature)</h2>
+<table>
+<tr><th>No</th><th>Widget / Property</th><th>Work / Function</th><th>Example Code</th><th>Feature</th></tr>
+<tr><td class="cat" colspan="5">A. Basic Structure - 10 Widgets</td></tr>
+<tr><td>1</td><td>MaterialApp</td><td>Root app widget</td><td>MaterialApp(home: Home())</td><td>Starts app, defines theme, routes</td></tr>
+<tr><td>2</td><td>Scaffold</td><td>Basic page layout</td><td>Scaffold(appBar:.., body:..)</td><td>Gives appBar, body, drawer structure</td></tr>
+<tr><td>3</td><td>AppBar</td><td>Top bar</td><td>AppBar(title: Text("Home"))</td><td>Top navigation bar</td></tr>
+<tr><td>4</td><td>Container</td><td>Box with decoration</td><td>Container(width:100, color:Colors.blue)</td><td>Most used, holds one child, styling</td></tr>
+<tr><td>5</td><td>Text</td><td>Shows text</td><td>Text("Hello", style: TextStyle())</td><td>Displays string</td></tr>
+<tr><td>6</td><td>Image</td><td>Shows image</td><td>Image.asset("img.png") / Image.network(url)</td><td>From asset or internet</td></tr>
+<tr><td>7</td><td>Icon</td><td>Shows icon</td><td>Icon(Icons.home)</td><td>Material icons library</td></tr>
+<tr><td>8</td><td>SizedBox</td><td>Fixed size box / spacing</td><td>SizedBox(height:20)</td><td>Gives space, empty box</td></tr>
+<tr><td>9</td><td>Center</td><td>Centers child</td><td>Center(child: Text())</td><td>Centers horizontally and vertically</td></tr>
+<tr><td>10</td><td>SafeArea</td><td>Safe from notch</td><td>SafeArea(child: ...)</td><td>Avoids notch, status bar overlap</td></tr>
+
+<tr><td class="cat" colspan="5">B. Layout Widgets - 15 Widgets</td></tr>
+<tr><td>11</td><td>Column</td><td>Vertical layout</td><td>Column(children:[Text(), Text()])</td><td>Arranges vertically</td></tr>
+<tr><td>12</td><td>Row</td><td>Horizontal layout</td><td>Row(children:[Icon(), Text()])</td><td>Arranges horizontally</td></tr>
+<tr><td>13</td><td>Stack</td><td>Overlaps widgets</td><td>Stack(children:[Image(), Text()])</td><td>One on top of another</td></tr>
+<tr><td>14</td><td>Positioned</td><td>Position in Stack</td><td>Positioned(top:10, left:20, child:..)</td><td>Position inside Stack</td></tr>
+<tr><td>15</td><td>Expanded</td><td>Takes remaining space</td><td>Expanded(child: Container())</td><td>Fills available space in Row/Column</td></tr>
+<tr><td>16</td><td>Flexible</td><td>Flexible space</td><td>Flexible(flex:1, child:..)</td><td>Similar to Expanded but flexible</td></tr>
+<tr><td>17</td><td>Wrap</td><td>Wraps to next line</td><td>Wrap(children:[Chip(), Chip()])</td><td>Auto wraps if overflow</td></tr>
+<tr><td>18</td><td>ListView</td><td>Scrollable list vertical</td><td>ListView(children:[...])</td><td>Scrollable, for long lists</td></tr>
+<tr><td>19</td><td>ListView.builder</td><td>Dynamic list builder</td><td>ListView.builder(itemCount:10, itemBuilder:..)</td><td>Efficient for 1000 items, builds only visible</td></tr>
+<tr><td>20</td><td>GridView</td><td>Grid layout</td><td>GridView.count(crossAxisCount:2)</td><td>Grid of items</td></tr>
+<tr><td>21</td><td>SingleChildScrollView</td><td>Makes single child scrollable</td><td>SingleChildScrollView(child: Column())</td><td>Scrolls whole page</td></tr>
+<tr><td>22</td><td>Padding</td><td>Adds padding</td><td>Padding(padding: EdgeInsets.all(10), child:..)</td><td>Space inside</td></tr>
+<tr><td>23</td><td>Align</td><td>Aligns child</td><td>Align(alignment: Alignment.center)</td><td>Aligns at specific position</td></tr>
+<tr><td>24</td><td>AspectRatio</td><td>Fixed aspect ratio</td><td>AspectRatio(aspectRatio:16/9)</td><td>Keeps width/height ratio</td></tr>
+<tr><td>25</td><td>FittedBox</td><td>Fits child in box</td><td>FittedBox(child: Text())</td><td>Scales to fit</td></tr>
+
+<tr><td class="cat" colspan="5">C. Buttons & Input - 15 Widgets</td></tr>
+<tr><td>26</td><td>ElevatedButton</td><td>Raised button</td><td>ElevatedButton(onPressed:(){}, child: Text("Click"))</td><td>Main button with shadow</td></tr>
+<tr><td>27</td><td>TextButton</td><td>Flat button</td><td>TextButton(onPressed:(){}, child: Text("OK"))</td><td>Text only button</td></tr>
+<tr><td>28</td><td>IconButton</td><td>Icon button</td><td>IconButton(icon: Icon(Icons.add), onPressed:(){})</td><td>Button with icon</td></tr>
+<tr><td>29</td><td>FloatingActionButton</td><td>FAB round button</td><td>FloatingActionButton(onPressed:(){}, child: Icon(Icons.add))</td><td>Bottom right round button</td></tr>
+<tr><td>30</td><td>OutlinedButton</td><td>Border button</td><td>OutlinedButton(onPressed:(){}, child: Text())</td><td>Border only button</td></tr>
+<tr><td>31</td><td>TextField</td><td>Input field</td><td>TextField(controller: controller)</td><td>User text input</td></tr>
+<tr><td>32</td><td>TextFormField</td><td>Form input with validation</td><td>TextFormField(validator: (v){})</td><td>With validation, used in Form</td></tr>
+<tr><td>33</td><td>Checkbox</td><td>Tick box</td><td>Checkbox(value: true, onChanged: (v){})</td><td>True/false selection</td></tr>
+<tr><td>34</td><td>Radio</td><td>Single selection</td><td>Radio(value:1, groupValue: g, onChanged:(){})</td><td>Select one from many</td></tr>
+<tr><td>35</td><td>Switch</td><td>Toggle switch</td><td>Switch(value: true, onChanged:(){})</td><td>On/off toggle</td></tr>
+<tr><td>36</td><td>Slider</td><td>Slide value</td><td>Slider(value: 0.5, onChanged:(){})</td><td>Selects range value</td></tr>
+<tr><td>37</td><td>DropdownButton</td><td>Dropdown menu</td><td>DropdownButton(items:[], onChanged:(){})</td><td>Dropdown selection</td></tr>
+<tr><td>38</td><td>Form</td><td>Groups form fields</td><td>Form(key: formKey, child: Column())</td><td>Manages validation of all fields</td></tr>
+<tr><td>39</td><td>GestureDetector</td><td>Detects gestures</td><td>GestureDetector(onTap:(){}, child:..)</td><td>Any widget becomes clickable</td></tr>
+<tr><td>40</td><td>InkWell</td><td>Tap with ripple effect</td><td>InkWell(onTap:(){}, child:..)</td><td>Tap effect with Material splash</td></tr>
+
+<tr><td class="cat" colspan="5">D. Styling & Decoration - 10 Widgets</td></tr>
+<tr><td>41</td><td>Card</td><td>Card with shadow</td><td>Card(child: ListTile())</td><td>Material card design</td></tr>
+<tr><td>42</td><td>ListTile</td><td>List row with title, subtitle, icon</td><td>ListTile(title: Text(), leading: Icon())</td><td>Ready list row</td></tr>
+<tr><td>43</td><td>Divider</td><td>Horizontal line</td><td>Divider()</td><td>Separates items</td></tr>
+<tr><td>44</td><td>CircleAvatar</td><td>Round avatar</td><td>CircleAvatar(backgroundImage: NetworkImage())</td><td>Round profile image</td></tr>
+<tr><td>45</td><td>Chip</td><td>Small tag</td><td>Chip(label: Text("Tag"))</td><td>Small label/tag</td></tr>
+<tr><td>46</td><td>Tooltip</td><td>Hover hint</td><td>Tooltip(message: "Info", child: Icon())</td><td>Shows message on long press</td></tr>
+<tr><td>47</td><td>Opacity</td><td>Transparency</td><td>Opacity(opacity: 0.5, child:..)</td><td>Makes transparent</td></tr>
+<tr><td>48</td><td>ClipRRect</td><td>Rounded clip</td><td>ClipRRect(borderRadius: BorderRadius.circular(10), child: Image())</td><td>Clips with rounded corners</td></tr>
+<tr><td>49</td><td>BoxDecoration</td><td>Decoration for Container</td><td>BoxDecoration(color:.., borderRadius:..)</td><td>Color, gradient, border, shadow</td></tr>
+<tr><td>50</td><td>Gradient</td><td>Color gradient</td><td>LinearGradient(colors:[blue, purple])</td><td>Two color mix</td></tr>
+
+<tr><td class="cat" colspan="5">E. Navigation & Advanced - 15 Widgets</td></tr>
+<tr><td>51</td><td>Navigator.push</td><td>Go to new screen</td><td>Navigator.push(context, MaterialPageRoute(builder: (c)=> Second()))</td><td>Navigation to new page</td></tr>
+<tr><td>52</td><td>Navigator.pop</td><td>Go back</td><td>Navigator.pop(context)</td><td>Returns to previous page</td></tr>
+<tr><td>53</td><td>BottomNavigationBar</td><td>Bottom tabs</td><td>BottomNavigationBar(items:[...])</td><td>Bottom tab menu</td></tr>
+<tr><td>54</td><td>Drawer</td><td>Side menu</td><td>Drawer(child: ListView())</td><td>Left side menu</td></tr>
+<tr><td>55</td><td>TabBar / TabBarView</td><td>Top tabs</td><td>TabBar(tabs:[Tab(text:"Home")])</td><td>Top tab switching</td></tr>
+<tr><td>56</td><td>PageView</td><td>Swipeable pages</td><td>PageView(children:[Page1(), Page2()])</td><td>Swipe between pages</td></tr>
+<tr><td>57</td><td>FutureBuilder</td><td>Handles Future data</td><td>FutureBuilder(future: fetchData(), builder: (c,snapshot)=>{})</td><td>For API calls, shows loading</td></tr>
+<tr><td>58</td><td>StreamBuilder</td><td>Handles Stream data</td><td>StreamBuilder(stream: stream, builder:..)</td><td>For real-time data like Firebase</td></tr>
+<tr><td>59</td><td>AlertDialog</td><td>Popup dialog</td><td>showDialog(context:.., builder:(c)=>AlertDialog())</td><td>Popup alert</td></tr>
+<tr><td>60</td><td>SnackBar</td><td>Bottom message</td><td>ScaffoldMessenger.of(context).showSnackBar(SnackBar(content:Text()))</td><td>Bottom small message</td></tr>
+<tr><td>61</td><td>RefreshIndicator</td><td>Pull to refresh</td><td>RefreshIndicator(onRefresh:() async {}, child: ListView())</td><td>Pull down refresh</td></tr>
+<tr><td>62</td><td>Hero</td><td>Animation between screens</td><td>Hero(tag:"img", child: Image())</td><td>Smooth image transition between pages</td></tr>
+<tr><td>63</td><td>AnimatedContainer</td><td>Animated box</td><td>AnimatedContainer(duration: Duration(seconds:1))</td><td>Animates size/color change</td></tr>
+<tr><td>64</td><td>State Management</td><td>Manages state</td><td>Provider / Bloc / GetX / setState()</td><td>setState() basic, Provider recommended</td></tr>
+<tr><td>65</td><td>MediaQuery</td><td>Screen size info</td><td>MediaQuery.of(context).size.width</td><td>Gets screen width/height</td></tr>
+
+<tr><td class="cat" colspan="5">F. Dart Basics Used in Flutter - 10 Concepts</td></tr>
+<tr><td>66</td><td>Variables var/final/const</td><td>Stores data</td><td>var name="John"; final age=20; const pi=3.14</td><td>var changeable, final once, const compile-time constant</td></tr>
+<tr><td>67</td><td>Data Types</td><td>Types of data</td><td>String, int, double, bool, List, Map</td><td>String text, int number, List array, Map object</td></tr>
+<tr><td>68</td><td>Functions</td><td>Reusable code</td><td>int sum(a,b){return a+b;} or (a,b)=>a+b</td><td>Arrow function shorthand</td></tr>
+<tr><td>69</td><td>Classes</td><td>Blueprint</td><td>class Person{String name; Person(this.name);}</td><td>OOP structure</td></tr>
+<tr><td>70</td><td>Null Safety</td><td>Safe null handling</td><td>String? name; name ?? "Guest"</td><td>? means nullable, ?? default value</td></tr>
+<tr><td>71</td><td>Async Await</td><td>Asynchronous</td><td>Future fetch() async {await apiCall();}</td><td>For API calls</td></tr>
+<tr><td>72</td><td>Future / Stream</td><td>Future data</td><td>Future is one-time, Stream is continuous</td><td>Future for API, Stream for real-time</td></tr>
+<tr><td>73</td><td>Widget Lifecycle</td><td>Lifecycle methods</td><td>initState(), build(), dispose()</td><td>initState runs once, build runs many times</td></tr>
+<tr><td>74</td><td>Keys</td><td>Widget identifier</td><td>Key("value")</td><td>Preserves state when widget moves</td></tr>
+<tr><td>75</td><td>Packages</td><td>Adds features</td><td>flutter pub add http / provider</td><td>Adds extra library</td></tr>
+</table>
+
+<h2>6. Flutter Project Structure</h2>
+<div class="code">my_app/
+├─ lib/
+│  ├─ main.dart (Main file, starts app)
+│  ├─ screens/ (All pages)
+│  ├─ widgets/ (Reusable widgets)
+│  └─ models/ (Data classes)
+├─ assets/
+│  ├─ images/
+│  └─ fonts/
+├─ pubspec.yaml (Dependencies list like package.json)
+└─ android/ & ios/ (Native folders)</div>
+
+<h2>7. Example Code - Top Marks</h2>
+<div class="code">// Modern Flutter Example - Pure English
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title: "Flutter A-Z",
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatefulWidget{
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen>{
+  int count = 0;
+  List<String> items = ["Apple", "Banana", "Mango"];
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(title: Text("Flutter Complete")),
+      body: Column(
+        children: [
+          Text("Count: $count", style: TextStyle(fontSize: 24)),
+          ElevatedButton(
+            onPressed: (){
+              setState((){ count++; }); // Updates UI
+            },
+            child: Text("Increment"),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: items.length,
+              itemBuilder: (context, index){
+                return Card(
+                  child: ListTile(
+                    leading: Icon(Icons.star),
+                    title: Text(items[index]),
+                    onTap: (){
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text("Clicked ${items[index]}"))
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+</div>
+
+</div>
+</body>
+</html>
